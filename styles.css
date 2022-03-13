@@ -1,0 +1,111 @@
+* {
+background-color: #CEDFDF;
+}
+
+.show-links {
+    display: none;
+}
+
+.links a{
+    margin: auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a:hover{
+    color: rosybrown;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    size: 10rem;
+    cursor: pointer;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+}
+
+.nav-toggle:hover {
+    color: rosybrown;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    border: 1rem solid rosybrown;
+    border-radius: 10%;
+}
+
+#carousel {
+    background-color: black;
+}
+
+.carousel-container {
+    max-width: 62rem;
+    position: relative;
+    margin: auto;
+    background-color: black;
+}
+
+.flower-wall-img {
+    width: 35rem;
+    height: 30rem;
+    display: none;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    font-weight: bold;
+    color: rosybrown;
+    font-size: 3rem;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.next {
+    right: 0;
+}
+
+.summary-about {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: rosybrown;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.summary-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: rosybrown;
+    padding: 1rem;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.services-img {
+    height: 15rem;
+    width: 17.5rem;
+}
+
+.actual-service {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Blooming Stones</title>
+</head>
+<body>
+    <!-- title and logo -->
+    <header>
+        <div>
+        <img src="bloomingstoneslogo.png" alt="Blooming Stones Logo" class="logo">
+        </div>
+        <nav>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="links show-links">
+            <a href="#carousel">Carousel</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#form">Contact Us</a>
+            </div>
+    </nav>
+    </header>
+    <!-- Carousel - javascript carousel requirement -->
+    <div id="carousel">
+        <div class="carousel-container">
+            <div class="img-container">
+                <img src="flowerwall6.jpeg" class="flower-wall-img">
+            </div>
+            <div class="img-container">
+                <img src="flowerwall2.jpeg" class="flower-wall-img">
+            </div>
+            <div class="img-container">
+                <img src="flowerwall3.jpeg" class="flower-wall-img">
+            </div>
+            <div class="img-container">
+                <img src="flowerwall4.jpeg" class="flower-wall-img">
+            </div>
+            <div class="img-container">
+                <img src="flowerwall8.jpeg" class="flower-wall-img">
+            </div>
+            <a class="prev" onclick="nextImg(-1)">&#10094;</a>
+            <a class="next" onclick="nextImg(1)">&#10095;</a>
+        </div>
+    </div>
+    <!-- About - lorem ipsum?? -->
+    <div id="about">
+        <details class="details-about">
+        <summary class="summary-about">About Us</summary>
+        <p class="summary-p">The Blooming Stones is the premier supplier of wedding day floral services including
+             flower walls, table arrangements, arbors, and bouquets</p>
+        </details>
+    </div>
+    <!-- Services - flex requirement -->
+    <div id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="actual-service">
+            <div class="actual-services">
+                <p class="services-p">Flower Walls</p>
+                <img class="services-img" src="flowerwall11.jpeg" alt="Flower Wall">
+            </div>
+            </div>
+            <div class="actual-service">
+                <div class="actual-services">
+                    <p class="services-p">Arbors</p>
+                    <img class="services-img" src="arbor.jpeg" alt="Arbor">
+                </div>
+            </div>
+            <div class="actual-service">
+                <div class="actual-services">
+                    <p class="services-p">Table Arrangements</p>
+                    <img class="services-img" src="placesetting.jpeg" alt="Table Arrangements">
+                </div>
+            </div>
+            <div class="actual-service">
+                <div class="actual-services">
+                    <p class="services-p">Bridal Party</p>
+                    <img class="services-img" src="bridalparty.jpeg" alt="Bridal Party">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form and validation -->
+    <div id="form">
+        <form action="POST"> <!--still need to post to something-->
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" placeholder="First Name">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" placeholder="Last Name">
+        <br>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        <br>
+            <label for="services-needed">Service Needed</label>
+                <select name="services" id="services-options">
+                    <option value="flowerwall">Flower Wall</option>
+                    <option value="arbor">Arbor</option>
+                    <option value="tablearrangements">Table Arrangements</option>
+                    <option value="bridalparty">Bridal Party</option>
+                </select>
+        <br>
+            <label for="date">Date</label>
+            <input id="date" type="date">
+            <label for="time"> Time</label>
+            <input id="time" type="time">
+        <br>
+            <textarea cols="40" rows="5" placeholder="Tell us about your event"></textarea> 
+            <br>
+            <button type="submit">Submit</button>   
+        </form>
+    </div>
+    <!-- footer - copyright and social media buttons for instagram and facebook -->
+    <footer>
+        <p class="copyright">The Blooming Stones &#169; 2022</p>
+        <a href="https://www.facebook.com/thebloomingstones/">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/thebloomingstones/?hl=en">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </footer>
+
+  <script src="app.js">
+  </script>  
+</body>
+</html>
