@@ -1,5 +1,6 @@
 * {
 background-color: #CEDFDF;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .show-links {
@@ -12,18 +13,18 @@ background-color: #CEDFDF;
     display: block;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: rosybrown;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .links a:hover{
-    color: rosybrown;
+    color: white;
 }
 
 .nav-toggle {
     background: transparent;
     border: none;
-    color: white;
+    color: rosybrown;
     size: 10rem;
     cursor: pointer;
     margin: auto;
@@ -33,7 +34,7 @@ background-color: #CEDFDF;
 }
 
 .nav-toggle:hover {
-    color: rosybrown;
+    color: white;
 }
 
 .logo {
@@ -43,20 +44,15 @@ background-color: #CEDFDF;
     border-radius: 10%;
 }
 
-#carousel {
-    background-color: black;
-}
-
 .carousel-container {
-    max-width: 62rem;
+    width: 100%;
     position: relative;
     margin: auto;
-    background-color: black;
 }
 
 .flower-wall-img {
-    width: 35rem;
-    height: 30rem;
+    width: 90%;
+    height: 80%;
     display: none;
     margin: auto;
 }
@@ -79,33 +75,65 @@ background-color: #CEDFDF;
     right: 0;
 }
 
+#about {
+    border-radius: 5%;
+    border: 0.5rem dashed rosybrown;
+    margin-top: 0.25rem;
+}
+
 .summary-about {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
     color: rosybrown;
-    padding: 1rem;
+    padding: 0.25rem;
     cursor: pointer;
+    margin-top: 0.25rem;
 }
 
 .summary-p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: rosybrown;
-    padding: 1rem;
+    padding: 0.25rem;
 }
 
 .services-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .services-img {
     height: 15rem;
     width: 17.5rem;
+    border: .25rem solid rosybrown;
 }
 
 .actual-service {
     display: flex;
     justify-content: center;
+}
+
+input, textarea, select, .submit {
+    background-color: white;
+    margin: 0.25rem;
+    border-radius: 5%;
+    border: .15rem solid rosybrown;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: rosybrown;
+    color: white;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

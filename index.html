@@ -34,7 +34,7 @@
                 <img src="flowerwall6.jpeg" class="flower-wall-img">
             </div>
             <div class="img-container">
-                <img src="flowerwall2.jpeg" class="flower-wall-img">
+                <img src="flowerwall10.jpeg" class="flower-wall-img">
             </div>
             <div class="img-container">
                 <img src="flowerwall3.jpeg" class="flower-wall-img">
@@ -49,13 +49,13 @@
             <a class="next" onclick="nextImg(1)">&#10095;</a>
         </div>
     </div>
-    <!-- About - lorem ipsum?? -->
+    <!-- About -->
     <div id="about">
-        <details class="details-about">
-        <summary class="summary-about">About Us</summary>
+        <div class="details-about">
+        <div class="summary-about"><h2>About Us</h2></div>
         <p class="summary-p">The Blooming Stones is the premier supplier of wedding day floral services including
              flower walls, table arrangements, arbors, and bouquets</p>
-        </details>
+        </div>
     </div>
     <!-- Services - flex requirement -->
     <div id="services">
@@ -88,19 +88,27 @@
         </div>
     </div>
     <!-- form and validation -->
+    <h2>Contact Us</h2>
     <div id="form">
         <form action="POST"> <!--still need to post to something-->
             <label for="firstname">First Name</label>
+        <br>
             <input id="firstname" type="text" placeholder="First Name">
+        <br>
             <label for="lastname">Last Name</label>
+        <br>
             <input id="lastname" type="text" placeholder="Last Name">
         <br>
             <label for="phone">Phone</label>
+        <br>
             <input id="phone" type="tel">
+        <br>
             <label for="email">Email</label>
+        <br>
             <input id="email" type="email">
         <br>
             <label for="services-needed">Service Needed</label>
+        <br>
                 <select name="services" id="services-options">
                     <option value="flowerwall">Flower Wall</option>
                     <option value="arbor">Arbor</option>
@@ -109,24 +117,29 @@
                 </select>
         <br>
             <label for="date">Date</label>
+        <br>
             <input id="date" type="date">
+        <br>
             <label for="time"> Time</label>
+        <br>
             <input id="time" type="time">
         <br>
             <textarea cols="40" rows="6" placeholder="What's the occasion?"></textarea> 
             <br>
-            <button type="submit">Submit</button>   
+            <button class="submit" type="submit">Submit</button>   
         </form>
     </div>
     <!-- footer - copyright and social media buttons for instagram and facebook -->
     <footer>
         <p class="copyright">The Blooming Stones &#169; 2022</p>
+        <div class="socials">
         <a href="https://www.facebook.com/thebloomingstones/">
             <i class="fab fa-facebook"></i>
         </a>
         <a href="https://www.instagram.com/thebloomingstones/?hl=en">
             <i class="fab fa-instagram"></i>
         </a>
+        </div>
     </footer>
 
   <script src="app.js">
