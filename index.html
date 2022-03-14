@@ -59,7 +59,7 @@
     </div>
     <!-- Services - flex requirement -->
     <div id="services">
-        <h2>Services</h2>
+        <h2 class="services-header">Services</h2>
         <div class="services-container">
             <div class="actual-service">
             <div class="actual-services">
@@ -88,9 +88,9 @@
         </div>
     </div>
     <!-- form and validation -->
-    <h2>Contact Us</h2>
+    <h2 class="contact">Contact Us</h2>
     <div id="form">
-        <form action="POST"> <!--still need to post to something-->
+        <form name="contactForm"> <!--still need to post to something-->
             <label for="firstname">First Name</label>
         <br>
             <input id="firstname" type="text" placeholder="First Name">
@@ -105,11 +105,12 @@
         <br>
             <label for="email">Email</label>
         <br>
-            <input id="email" type="email">
+            <input id="email" type="text" name="femail">
         <br>
             <label for="services-needed">Service Needed</label>
         <br>
                 <select name="services" id="services-options">
+                    <option value="none"></option>
                     <option value="flowerwall">Flower Wall</option>
                     <option value="arbor">Arbor</option>
                     <option value="tablearrangements">Table Arrangements</option>
@@ -126,7 +127,7 @@
         <br>
             <textarea cols="40" rows="6" placeholder="What's the occasion?"></textarea> 
             <br>
-            <button class="submit" type="submit">Submit</button>   
+            <button class="submit" type="submit" onclick="validateForm()">Submit</button>   
         </form>
     </div>
     <!-- footer - copyright and social media buttons for instagram and facebook -->

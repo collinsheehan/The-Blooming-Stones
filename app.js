@@ -35,3 +35,13 @@ function showImg(n) {
     images[imgIndex-1].style.display = "block";
 }
 
+//Form Validation
+function validateForm() {
+    let x = document.forms["contactForm"]["femail"].value;
+    if (x == "") {
+      alert("email must be filled out");
+      return true;
+    } else {
+        alert("Thank you!");
+    }
+  }
