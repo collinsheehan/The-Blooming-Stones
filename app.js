@@ -1,4 +1,4 @@
-//NAVBAR
+// NAVBAR- show/hide links on click
 
 const navToggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
